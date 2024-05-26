@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Basic</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 20px 50px;
+        }
+
+        thead, tfoot{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Information Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Position</th>
+                <th colspan="2">Position</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">01</td>
+                <td>Ram</td>
+                <td>HR</td>
+                <td>Engineer</td>
+            </tr>
+
+            <tr>
+                <td>Ram</td>
+                <td>HR</td>
+                <td>Engineer</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Shyam</td>
+                <td colspan="2">Engineer</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">End of Employee Information</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
