@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table wih CSS</title>
+    <style>
+        .table{
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .row{
+            display: table-row;
+        }
+        .cell{
+            display: table-cell;
+            border: 1px solid black;
+            padding: 5px 10px;
+            text-align: center;
+        }
+        .head{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="row">
+            <div class="cell head">ID</div>
+            <div class="cell head">Name</div>
+        </div>
+        <div class="row">
+            <div class="cell">1</div>
+            <div class="cell">Apple</div>
+        </div>
+        <div class="row">
+            <div class="cell">2</div>
+            <div class="cell">Ball</div>
+        </div>
+    </div>
+</body>
+</html>
