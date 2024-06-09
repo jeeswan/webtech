@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+      .parent{
+        display: grid;
+        grid-template-areas:
+        'sidebar header header header'
+        'sidebar content content content'
+        'sidebar content content content'
+        'sidebar content content content'
+        'sidebar footer footer footer';
+        height: 100vh;
+
+      }
+      header{
+        background: red;
+        grid-area: header;
+
+      }
+      nav {
+        background: blue;
+        grid-area: sidebar;
+      }
+      main {
+        background: green;
+        grid-area: content;
+      }
+      footer {
+        background: black;
+        grid-area: footer;
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <header>Heading section</header>
+        <nav>sidebar</nav>
+        <main>content section</main>
+        <footer>Footer section</footer>
+    </div>    
+</body>
+</html>
