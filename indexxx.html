@@ -1,8 +1,53 @@
 <html lang="en">
 <head>
-    <title>Destructuring</title>
+    <title>Function</title>
 </head>
 <body>
-    <script src="/script.js"></script>
+    <script>
+        // function add(a,b){
+        //     return a+b;
+        // };
+
+        // const add2 = function(a,b){
+        //     return a+b;
+        // };
+
+        // const add3 = (a,b) => a + b;
+
+        // const square = a => a*a;
+
+        // console.log(add(1,2));
+        // console.log(add2(1,2));
+        // console.log(add3(1,2));
+        // console.log(square(2));
+
+        // greet("noone");
+        // greet2("noone");
+        // function greet(name){
+        //     console.log("hello " + name);
+        // }
+
+        // const greet2 = (name) => console.log("Hello " + name);
+
+        // greet("Krisha");
+        // greet2("Rose")
+
+        // function Person(name){
+        //     this.name = name;
+        // }
+
+        // const person1 =  new Person("Ram");
+
+        // console.log(person1);
+
+        person1 = {
+            name: "Ram",
+            printName: () => {
+                console.log(this.name);
+            },
+        };
+
+        person1.printName();
+    </script>
 </body>
 </html>
