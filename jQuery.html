@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>jQuery</title>
+        <style>
+            .blue{
+                color: blue;
+            }
+            .red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <h2 id="title">Navbar</h2>
+            <ul>
+                <li id="home">Home</li>
+                <li id="about" class="red">About</li>
+            </ul> 
+        </div>
+        <script src="/jquery-3.7.1.min.js"></script>
+        <script>
+            let title = $("title").text();
+            console.log(title);
+
+            jQuery('#title').text("New Navbar Title");
+
+            $('#title').html("<i>Navbar<i>");
+
+            $("ul").prepend("<h2>Jeeswan BAjracharya</h2>");
+            $("ul").prepend("<h2>Project</h2>");
+            $("ul").prepend("<h2>Services</h2>");
+        </script>
+    </body>
+</html>
